@@ -6,12 +6,12 @@ from Models.model import SentimentItem, TRUEItem, ADS, SentimentTrue, OutputOpti
 from io import BytesIO
 
 # โหลดรูปภาพ
-image_path = "path_to_your_image.jpg"  # เปลี่ยนเป็นพาธของไฟล์รูปภาพ
+image_path = "IMG_6027.png"  # เปลี่ยนเป็นพาธของไฟล์รูปภาพ
 st.image(image_path, use_column_width=True)
 
 # ส่วนของแบนเนอร์หรือเนื้อหาอื่น ๆ
-st.title("Your Banner Title")
-st.write("Some description or content below the image.")
+st.title("Wong-Wai AI")
+st.write("AI for Detection and Handling Social Media Crisis Management")
 # เรียกใช้งานฟังก์ชัน
 msg= upload_file()
 
