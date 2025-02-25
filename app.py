@@ -98,7 +98,7 @@ if openai_api_key:
     model = "gpt-4o-mini"
 
     # [ โค้ดจำแนกประเภทของ True ]
-
+st.set_page_config(page_title="Wong-Wai", page_icon="📌", layout="wide")
 image_path = "IMG_6027.png"  # เปลี่ยนเป็นพาธของไฟล์รูปภาพ
 st.image(image_path, use_column_width=True)
 
