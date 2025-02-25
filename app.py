@@ -5,13 +5,7 @@ import openai
 from Models.model import SentimentItem, TRUEItem, ADS, SentimentTrue, OutputOptions, Item
 from io import BytesIO
 
-# โหลดรูปภาพ
-image_path = "IMG_6027.png"  # เปลี่ยนเป็นพาธของไฟล์รูปภาพ
-st.image(image_path, use_column_width=True)
 
-# ส่วนของแบนเนอร์หรือเนื้อหาอื่น ๆ
-st.title("Wong-Wai AI")
-st.write("AI for Detection and Handling Social Media Crisis Management")
 # เรียกใช้งานฟังก์ชัน
 msg= upload_file()
 
@@ -104,6 +98,12 @@ if openai_api_key:
     model = "gpt-4o-mini"
 
     # [ โค้ดจำแนกประเภทของ True ]
+
+image_path = "IMG_6027.png"  # เปลี่ยนเป็นพาธของไฟล์รูปภาพ
+st.image(image_path, use_column_width=True)
+
+st.title("Wong-Wai AI")
+st.write("AI for Detection and Handling Social Media Crisis Management")
 
     def function_llm(qa_test):
         # แปลงข้อความเดี่ยวเป็นลิสต์
