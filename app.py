@@ -5,12 +5,6 @@ import openai
 from Models.model import SentimentItem, TRUEItem, ADS, SentimentTrue, OutputOptions, Item
 from io import BytesIO
 
-st.set_page_config(page_title="Wong-Wai", page_icon="📌", layout="wide")
-image_path = "IMG_6027.png"  # เปลี่ยนเป็นพาธของไฟล์รูปภาพ
-st.image(image_path, use_container_width =True)
-
-st.title("Wong-Wai AI")
-st.write("AI for Detection and Handling Social Media Crisis Management")
 # เรียกใช้งานฟังก์ชัน
 msg= upload_file()
 
