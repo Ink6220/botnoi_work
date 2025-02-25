@@ -2,7 +2,13 @@ import streamlit as st
 import pandas as pd
 
 def upload_file():
-    st.set_page_config(layout="wide")  # ขยายจอให้เต็ม
+    # st.set_page_config(layout="wide")  # ขยายจอให้เต็ม
+    st.set_page_config(page_title="Wong-Wai", page_icon="📌", layout="wide")
+    image_path = "IMG_6027.png" 
+    st.image(image_path, width=300 ) #use_container_width =True
+
+st.title("Wong-Wai AI")
+st.write("AI for Detection and Handling Social Media Crisis Management")
     st.title("Upload your file")
     
 
