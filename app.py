@@ -5,7 +5,13 @@ import openai
 from Models.model import SentimentItem, TRUEItem, ADS, SentimentTrue, OutputOptions, Item
 from io import BytesIO
 
+# โหลดรูปภาพ
+image_path = "path_to_your_image.jpg"  # เปลี่ยนเป็นพาธของไฟล์รูปภาพ
+st.image(image_path, use_column_width=True)
 
+# ส่วนของแบนเนอร์หรือเนื้อหาอื่น ๆ
+st.title("Your Banner Title")
+st.write("Some description or content below the image.")
 # เรียกใช้งานฟังก์ชัน
 msg= upload_file()
 
